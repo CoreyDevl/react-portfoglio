@@ -1,0 +1,146 @@
+#contact{
+  margin-top: -50px;
+}
+
+.container.contact_container{
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 10%;
+}
+
+.contact_options{
+  transform: scale(80%);
+  margin-left: -180px;
+  margin-top: -150px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact_option{
+  width: 250px;
+  background: var(--color-bg-variant);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--tansition);
+}
+
+.contact_option:hover{
+  background: var(--color-bg);
+  border-color: var(--color-primary-variant);
+}
+
+.contact_option-icon{
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.contact_option a{
+  margin-top: 0.5rem;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.contact_option h4{
+  font-size: 16px;
+}
+
+.contact_option h5{
+  font-size: 12px;
+}
+
+/*   FORM    */
+
+form{
+   
+  transform: scale(85%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: -80px;
+  margin-left: -50px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-light);
+  resize: none;
+  color: var(--color-white);
+}
+
+.btn-ctt{
+  background: var(--color-bg-variant);
+  width: max-content;
+  display: inline-block;
+  color: var(--color-light);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid var(--color-light);
+  transition: var(--tansition);
+}
+
+.btn-ctt:hover{
+  background: var(--color-white);
+  color: #000;
+  border-color: transparent;
+  font-weight: bold;
+}
+ 
+/*media queries (medium devices)*/
+@media screen and (max-width: 1024px){
+
+  #contact{
+    margin-top: -200px;
+  }
+
+  .contact_options{
+    transform: scale(100%);
+    margin-top: -70px;
+    margin-left: -180px;
+  }
+
+  .container.contact_container{
+    margin-left: 300px;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  form{
+    margin-top: -500px;
+    margin-left: 80px;
+    transform: scale(100%);
+  }
+ 
+}
+    
+/*media queries (small devices)*/
+@media screen and (max-width: 600px){ 
+  #contact{
+    margin-top: -200px;
+  }
+  .container.contact_container{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: var(--container-width-sm);
+  }
+
+  .contact_options{
+    transform: scale(100%);
+    margin-left: 132px;
+    margin-top: -40px;
+  }
+
+  form{
+    margin-left: 30px;
+    transform: scale(70%);
+  }
+  }

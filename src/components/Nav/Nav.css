@@ -7,7 +7,7 @@ nav{
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: 0.3rem;
   display: flex;
   gap: 0.8rem;
   border-radius: 3rem;
@@ -25,10 +25,23 @@ nav a{
 }
  
 nav a:hover{
-  background: rgba(0, 0, 0, 0.3)
+  background: rgba(59, 32, 32, 0.3);
 }
 
 nav a.active{
-  background:rgba(0, 0, 0, 0.3);
+  background: var(--color-light);
   color: var(--color-white);
+}
+
+/*media queries (medium devices)*/
+@media screen and (max-width: 1024px){
+nav{
+  position: fixed;
+ 
+}
+}
+
+/*media queries (small devices)*/
+@media screen and (max-width: 600px){
+  
 }
